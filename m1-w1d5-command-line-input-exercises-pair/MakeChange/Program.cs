@@ -19,6 +19,15 @@ namespace MakeChange
         */
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter the amount of the bill: ");
+            double amount = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the amount tendered: ");
+            double amtTendered = double.Parse(Console.ReadLine());
+
+            double change = amtTendered - amount;
+
+            Console.WriteLine("Here is your change: " + change);
+
         }
     }
 }
